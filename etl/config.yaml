@@ -1,0 +1,57 @@
+# Paths
+data_folder: "../data"
+scraping_folder: "scrapping"
+
+# URLs and table configurations
+tables:
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/stats/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 0
+    table_name: "standard_stats"
+    subdivide_columns: 37
+    header_start: 8
+    header_end: 45
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/shooting/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 1
+    table_name: "shooting_stats"
+    subdivide_columns: 26
+    header_start: 5
+    header_end: 31
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/passing/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 2
+    table_name: "passing_stats"
+    subdivide_columns: 32
+    header_start: 10
+    header_end: 42
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/passing_types/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 3
+    table_name: "passing_types"
+    subdivide_columns: 24
+    header_start: 6
+    header_end: 30
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/gca/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 4
+    table_name: "gca_stats"
+    subdivide_columns: 25
+    header_start: 7
+    header_end: 32
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/defense/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 5
+    table_name: "defense_stats"
+    subdivide_columns: 25
+    header_start: 7
+    header_end: 32
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/possession/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 6
+    table_name: "possession_stats"
+    subdivide_columns: 31
+    header_start: 7
+    header_end: 38
+  - url: "https://fbref.com/en/comps/Big5/2023-2024/misc/players/2023-2024-Big-5-European-Leagues-Stats"
+    table_index: 7
+    table_name: "misc_stats"
+    subdivide_columns: 25
+    header_start: 5
+    header_end: 30
+
+# Join key for DataFrames
+join_key: ["Player", "Squad"]
