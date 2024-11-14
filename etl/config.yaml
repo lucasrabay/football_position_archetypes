@@ -1,6 +1,6 @@
 # Paths
 data_folder: "../data"
-scraping_folder: "scrapping"
+scraping_folder: "etl"
 
 # URLs and table configurations
 tables:

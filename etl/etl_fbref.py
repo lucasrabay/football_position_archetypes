@@ -4,12 +4,12 @@ import yaml
 import pandas as pd
 from bs4 import BeautifulSoup
 import sys
-sys.path.append('../utils')
-from utils import Utils
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.utils import Utils
 
 # Load YAML Configuration
 def load_config():
-    with open("scrapping/config.yaml", "r") as file:
+    with open("etl/config.yaml", "r") as file:
         config = yaml.safe_load(file)
     return config
 
